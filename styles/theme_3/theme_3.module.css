@@ -1,6 +1,25 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Oswald&family=Pacifico&family=Poppins&display=swap');
 
+/* --------------------------------------------------------------------------------------------------------------
+   All haldle 
+-----------------------------------------------------------------------------------------------------------------*/
+.Section_gap{
+ margin-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------
+    MenubarSec
+-----------------------------------------------------------------------------------------------------------------*/
 
 
 .MenubarSec{
@@ -10,6 +29,7 @@
     top:20px;
     left:0;
     width:100%;
+
 }
 
 .MenubarDiv{
@@ -21,6 +41,15 @@
 .MenubarDiv a{
     text-decoration: none;
     color: #fff;
+}
+
+.MenubarDiv a:hover{
+  color: #FED700;
+}
+
+.MenubarSec a:hover{
+  text-underline-offset: 3px;
+  text-decoration-line: underline;
 }
 
 /* left--- */
@@ -371,6 +400,7 @@
     -o-transition: all .6s ease;
     transition: all .6s ease; 
 }
+
 .hovereffect2 ul li:hover a { 
      border-radius: 0%;
      background: #cac9c9; 
@@ -486,6 +516,7 @@
   }
   
   .footerul2{
+    padding-left: 17%;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
@@ -494,6 +525,8 @@
     color: #0A142F;
  
   }
+
+
   .footerul2 a{
      color: #0A142F;
   }
@@ -575,6 +608,14 @@
   text-decoration: none;
   }
   
+  /* icon glow */
+ 
+
+  
+ 
+
+
+
   /* .Txtdecor-none{
          text-decoration: none;
   }
@@ -990,8 +1031,93 @@
   margin-left: 4px;
   font-size: 18px;
 
-  
 }
+
+
+.hovereffect2 ul li a { 
+  font-size: 40px; 
+  color: #f5f5f5; 
+  margin: 0px 0px;
+
+}
+
+.ShippingTxt h4 {
+  font-size: 18px;
+}
+
+.ShippingTxt p {
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.footerul2 ul li:nth-child(1) {
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.footerul2 ul li:nth-child(2) {
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.footerul2 ul li:nth-child(3) {
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.mobile {
+  font-size: 24px;
+}
+
+.faenvelope{
+  font-size: 22px;
+}
+
+.falocationdot{
+  font-size: 26px;
+}
+
+.ShippingImg{
+  padding-bottom: 0px;
+}
+.ShippingImg img{
+   width: 40px;
+}
+
+.ShippingImg img {
+  margin-top: -20px;
+}
+.ShippingImgSvg1{
+ padding-top: 30px;
+}
+
+.hovereffect2 ul li { 
+  display: inline-block; 
+  margin-right: 0px; 
+  margin-bottom: 15px;
+
+}
+.hovereffect2 ul li a { 
+  margin: 0px 10px;
+  line-height: 35px; 
+  width: 45px; 
+  height: 45px; 
+
+
+}
+.hovereffect2 ul li a img { 
+   height: 20px;
+
+}
+
+.ShippingIconRow{
+
+  margin-bottom: 10px;
+}
+
 
 
 

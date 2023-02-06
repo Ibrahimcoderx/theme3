@@ -41,7 +41,7 @@ const Footer = () => {
                               <Row className={styles.ShippingIconRow}>
                                   <Col xs={5}>
                                         <div className={styles.ShippingImg} >
-                                          <img src='images/b50.svg'></img>
+                                          <img className={styles.ShippingImgSvg1} src='images/b50.svg'></img>
                                         </div>    
                                   </Col>
             
@@ -88,7 +88,7 @@ const Footer = () => {
                                         </div>
                                   </Col>
                               </Row>
-                          </Col>
+                        </Col>
 
                         <Col xs={12} sm={6} md={3}>
 
@@ -123,24 +123,15 @@ const Footer = () => {
 
             <Row>
 
-                <Col xs={12} sm={3} >
+                <Col xs={12} sm={2} >
 
                     <a href="#">
                       <img  src="images/b25.png" alt="free delivery"/>
                     </a>
                 </Col>
 
-                <Col xs={12} sm={2} className={styles.footerul1}>
-                  <h2 className={styles.footh2}>Quick Links</h2>
-                  <ul>
-                    <li><Link href="#" > HOME</Link></li>
-                    <li><Link href="#" >SHOP</Link></li>
-                    <li><Link href="#" >ABOUT US</Link></li>
-                    <li><Link href="#" >CONTACT US</Link></li>
-                  </ul>
-                </Col>
 
-                <Col xs={12} sm={5} className={styles.footerul2}>
+                <Col xs={12} sm={8} className={styles.footerul2}>
 
                     <ul>
                           <li>
@@ -167,6 +158,20 @@ const Footer = () => {
                     </ul>
                  </Col>
 
+
+
+
+                <Col xs={12} sm={2} className={styles.footerul1}>
+                  <h2 className={styles.footh2}>Quick Links</h2>
+                  <ul>
+                    <li><Link href="#" > HOME</Link></li>
+                    <li><Link href="#" >SHOP</Link></li>
+                    <li><Link href="#" >ABOUT US</Link></li>
+                    <li><Link href="#" >CONTACT US</Link></li>
+                  </ul>
+                </Col>
+
+{/* 
                   <Col  xs={12} sm={2} className={styles.footerul3}>
                     <p className={styles.footerp}>Join our social media</p>
 
@@ -177,11 +182,25 @@ const Footer = () => {
                           </Link>
                       </li>
 
-                      <li><Link href="#" ><AiFillYoutube className={styles.fayoutube} /></Link></li>
-                      <li><Link href="#" ><AiOutlineInstagram className={styles.fainstagram} /></Link></li>
-                      <li><Link href="#" ><AiOutlineTwitter className={styles.fatwitter} /></Link></li>
+                      <li>
+                          <Link href="#" >
+                            <AiFillYoutube className={styles.h} />
+                          </Link>
+                      </li>
+
+                      <li>
+                        <Link href="#" >
+                           <AiOutlineInstagram className={styles.h} />
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link href="#" ><AiOutlineTwitter className={styles.h} />
+                        </Link>
+                      </li>
+
                     </ul>
-                  </Col>
+                  </Col> */}
 
               </Row>
 
@@ -190,8 +209,8 @@ const Footer = () => {
                     <div className={styles.hr}></div>
                     {/* <hr className={styles.hr}/> */}
                     <div className={styles.lastdiv}>
-                      <p className={styles.lastp1}>A product of  Soft IT Care</p>
-                      <p className={styles.lastp2}>© 2022 Soft IT Care . All Rights Reserved.</p>
+                      <p className={styles.lastp1}>© 2023 Company Name . All Rights Reserved.</p>
+                      <p className={styles.lastp2}>System developed by Funneliner</p>
                     </div>
                 </Col>
               </Row>

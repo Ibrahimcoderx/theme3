@@ -7,12 +7,78 @@
     /* overflow-x: hidden; */
 }
 
+
+/* swiper.... */
+
 .swiper-pagination span{
       background-color: #fff;
       padding: 10px;
       vertical-align: 10px;
 }
 
+ .mySwiper .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    margin-left: 4%;
+}
+ .mySwiper .swiper-button-next {
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    margin-right: 4%;
+}
+
+.mySwiper .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;  
+}
+
+.mySwiper  .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 20px;
+}
+
+
+
+/* mySwiper2-------------- */
+.mySwiper2 {
+    position: relative;
+    top:0;
+    left: 0;
+
+}
+
+ .mySwiper2 .swiper-button-prev {
+    position: absolute !important;
+    width: 36px;
+    height: 36px;
+    color:#fff;
+    background: red;
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+ .mySwiper2 .swiper-button-next {
+    position: absolute !important;
+    right:20px;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    z-index: 17 !important;
+   
+}
+
+.mySwiper2 .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;  
+}
+
+.mySwiper2  .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 20px;
+}
 
 
 
@@ -52,5 +118,12 @@
         padding: 5px;
         vertical-align: 0px;
   }
- 
+
+  .mySwiper2 .swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+  .mySwiper2 .swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
     }

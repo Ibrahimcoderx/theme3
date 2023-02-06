@@ -26,6 +26,7 @@ const Menubar = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
+
   const handleShow = () => setShow(true);
 
 
@@ -56,7 +57,7 @@ const Menubar = () => {
                     {/* mid */}
                     <div className={styles.middleMenuDiv}>
 
-                      <Link className={styles.Link2} href='#'>Home</Link>
+                      <Link className={styles.Active} href='#'>Home</Link>
 
                       <Link className={styles.Link3} href='#'>Shop</Link>
 
@@ -179,7 +180,7 @@ const Menubar = () => {
 
 
        <section className={styles.CarouselSec}>
-
+        
          <Container fluid className={styles.CarouselSecCon}>
 
             <Swiper

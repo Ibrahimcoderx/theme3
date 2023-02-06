@@ -15,6 +15,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 // import Image from 'react-bootstrap/Image';
 import { MdAddShoppingCart} from "react-icons/md";
 import Link from 'next/link';
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
 
 
 
@@ -27,18 +29,22 @@ const HomePage = () => {
           {/*  --------------------------------------------------------------------------------------------------------------------- 
                 Slider
           -------------------------------------------------------------------------------------------------------*/}
+        <section className={styles.Section_gap}></section>
 
-        <section>
+        <section className={styles.CarouselSec2}>
 
                   <h2 className={styles.text4}>Our <span className={styles.text4R}>Categories</span></h2>
 
                     {/* slider--- */}
 
-          <Container>
+          <Container className='OverflowVsivle'>
               
             <Row>
 
               <Col lg={12}>
+                
+            
+              <div class="swiper mySwiperProductList">
 
                 <Swiper
                     slidesPerView={5}
@@ -52,11 +58,15 @@ const HomePage = () => {
                     navigation={true}
                     modules={[Pagination, Navigation]}
                     breakpoints={{
+                      120: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
                       320: {
                         slidesPerView: 2,
                         slidesPerGroup: 2,
                       },
-                      586: {
+                      575: {
                         slidesPerView: 2,
                         slidesPerGroup: 2,
                       },
@@ -74,8 +84,10 @@ const HomePage = () => {
                         slidesPerGroup: 5,
                       },
                     }}
+                    className="mySwiper2"
                   
                   >
+                   
                     <SwiperSlide>
                       <div className={styles.imgbox}>
                         <div className={styles.imgborder}>
@@ -84,7 +96,7 @@ const HomePage = () => {
                       </div>
                       <h2 className={styles.slidertxt}>Burger</h2>
                     </SwiperSlide>
-                        
+                   
                     <SwiperSlide>
                       <div className={styles.imgbox}>
                         <div className={styles.imgborder}>
@@ -166,9 +178,18 @@ const HomePage = () => {
                       </div>
                       <h2 className={styles.slidertxt}>French Fries</h2>
                     </SwiperSlide>
-                    
-              
+
+                 
+                
                 </Swiper>
+                    
+                {/* <div class="swiper-pagination"></div>
+                <div class="navbutton">
+                  <div class="swiper-button-prev2"><IoIosArrowForward className='icon1'></IoIosArrowForward></div>
+                  <div class="swiper-button-next2"><IoIosArrowBack className='icon2'></IoIosArrowBack></div>
+                </div> */}
+
+              </div>
 
               </Col>
 
@@ -213,7 +234,7 @@ const HomePage = () => {
         {/*  --------------------------------------------------------------------------------------------------------------------- 
 
         ------------------- Product Section-----------------------------------------------------------------------------------*/}
-          <section>
+          <section className={styles.Section_gap}>
             <h2 className={styles.text4}>Our <span className={styles.text4R}>Popular Products</span></h2>
 
             <Container>
@@ -229,7 +250,7 @@ const HomePage = () => {
                                     </div>
 
                                     <div className={styles.imgtxt2 }>
-                                      <span className={styles.imgspn1}>BDT 350 </span> 
+                                      <span className={styles.imgspn1}>BDT 450 </span> 
                                       <span className={styles.imgspn2}> BDT 500 </span>
                                     </div>
                                 </Col>
@@ -256,7 +277,7 @@ const HomePage = () => {
 
                                       <div className={styles.imgtxt2 }>
                                         <span className={styles.imgspn1}>BDT 350 </span> 
-                                        <span className={styles.imgspn2}> BDT 500 </span>
+                                        <span className={styles.imgspn2}> BDT 550 </span>
                                       </div>
                                   </Col>
 
@@ -281,8 +302,8 @@ const HomePage = () => {
                                       </div>
 
                                       <div className={styles.imgtxt2 }>
-                                        <span className={styles.imgspn1}>BDT 350 </span> 
-                                        <span className={styles.imgspn2}> BDT 500 </span>
+                                        <span className={styles.imgspn1}>BDT 450 </span> 
+                                        <span className={styles.imgspn2}> BDT 600 </span>
                                       </div>
                                   </Col>
 
@@ -308,7 +329,7 @@ const HomePage = () => {
 
                                       <div className={styles.imgtxt2 }>
                                         <span className={styles.imgspn1}>BDT 350 </span> 
-                                        <span className={styles.imgspn2}> BDT 500 </span>
+                                        <span className={styles.imgspn2}> BDT 700 </span>
                                       </div>
                                   </Col>
 
@@ -359,8 +380,8 @@ const HomePage = () => {
                                       </div>
 
                                       <div className={styles.imgtxt2 }>
-                                        <span className={styles.imgspn1}>BDT 350 </span> 
-                                        <span className={styles.imgspn2}> BDT 500 </span>
+                                        <span className={styles.imgspn1}>BDT 550 </span> 
+                                        <span className={styles.imgspn2}> BDT 700 </span>
                                       </div>
                                   </Col>
 
@@ -429,9 +450,11 @@ const HomePage = () => {
             </Container>
           </section>
 
-      <div className={styles.text4Margin}>
-          <h2 className={styles.text4}>All <span className={styles.text4R}> Products</span></h2>
-      </div>
+        <section  className={styles.Section_gap}>
+          <div className={styles.text4Margin}>
+              <h2 className={styles.text4}>All <span className={styles.text4R}> Products</span></h2>
+          </div>
+        </section>
 
       <section>
 
@@ -449,7 +472,7 @@ const HomePage = () => {
                                 </div>
 
                                 <div className={styles.imgtxt2 }>
-                                  <span className={styles.imgspn1}>BDT 350 </span> 
+                                  <span className={styles.imgspn1}>BDT 450 </span> 
                                   <span className={styles.imgspn2}> BDT 500 </span>
                                 </div>
                             </Col>
@@ -527,8 +550,8 @@ const HomePage = () => {
                                   </div>
 
                                   <div className={styles.imgtxt2 }>
-                                    <span className={styles.imgspn1}>BDT 350 </span> 
-                                    <span className={styles.imgspn2}> BDT 500 </span>
+                                    <span className={styles.imgspn1}>BDT 450 </span> 
+                                    <span className={styles.imgspn2}> BDT 600 </span>
                                   </div>
                               </Col>
 
@@ -553,8 +576,8 @@ const HomePage = () => {
                                   </div>
 
                                   <div className={styles.imgtxt2 }>
-                                    <span className={styles.imgspn1}>BDT 350 </span> 
-                                    <span className={styles.imgspn2}> BDT 500 </span>
+                                    <span className={styles.imgspn1}>BDT 550 </span> 
+                                    <span className={styles.imgspn2}> BDT 700 </span>
                                   </div>
                               </Col>
 
@@ -579,7 +602,7 @@ const HomePage = () => {
                                   </div>
 
                                   <div className={styles.imgtxt2 }>
-                                    <span className={styles.imgspn1}>BDT 350 </span> 
+                                    <span className={styles.imgspn1}>BDT 450 </span> 
                                     <span className={styles.imgspn2}> BDT 500 </span>
                                   </div>
                               </Col>
@@ -605,8 +628,8 @@ const HomePage = () => {
                                   </div>
 
                                   <div className={styles.imgtxt2 }>
-                                    <span className={styles.imgspn1}>BDT 350 </span> 
-                                    <span className={styles.imgspn2}> BDT 500 </span>
+                                    <span className={styles.imgspn1}>BDT 550 </span> 
+                                    <span className={styles.imgspn2}> BDT 650 </span>
                                   </div>
                               </Col>
 
@@ -631,8 +654,8 @@ const HomePage = () => {
                                   </div>
 
                                   <div className={styles.imgtxt2 }>
-                                    <span className={styles.imgspn1}>BDT 350 </span> 
-                                    <span className={styles.imgspn2}> BDT 500 </span>
+                                    <span className={styles.imgspn1}>BDT 450 </span> 
+                                    <span className={styles.imgspn2}> BDT 600 </span>
                                   </div>
                               </Col>
 

@@ -41,6 +41,7 @@ const ShopPage = () => {
                                         </Col>
                                     </Row>
 
+
                                     <ul className={styles.filterul}>
                                     <li > <Link href="#" className={styles.libold}>Burgers</Link></li>
                                     <li><Link href="#">Sandwiches</Link></li>

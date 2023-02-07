@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styles from '../../../styles/theme_3/theme_3.module.css'
 
@@ -16,6 +17,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { MdAddShoppingCart} from "react-icons/md";
 import Link from 'next/link';
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { useRef } from 'react';
 
 
 
@@ -23,6 +25,9 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 
 const HomePage = () => {
+
+  const swiperRef = useRef();
+
   return (
     <section>
 
@@ -42,6 +47,16 @@ const HomePage = () => {
             <Row>
 
               <Col lg={12}>
+
+              <div className={styles.BtnDev}>
+                  <button className={styles.SliderB1} onClick={() => swiperRef.current?.slidePrev()}>   
+                    <IoIosArrowBack  className={styles.icon1}></IoIosArrowBack>
+                  </button>
+
+                  <button className={styles.SliderB2} onClick={() => swiperRef.current?.slideNext()}> 
+                    <IoIosArrowForward className={styles.icon2}></IoIosArrowForward>
+                  </button>
+              </div>
                 
             
               <div class="swiper mySwiperProductList">
@@ -55,8 +70,11 @@ const HomePage = () => {
                     pagination={{
                       clickable: true,
                     }}
-                    navigation={true}
+                    // navigation={true}
                     modules={[Pagination, Navigation]}
+                    onBeforeInit={(swiper) => {
+                      swiperRef.current = swiper;
+                    }}
                     breakpoints={{
                       120: {
                         slidesPerView: 1,

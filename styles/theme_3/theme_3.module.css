@@ -195,6 +195,47 @@
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* ------------------Slider-------------------------------------------------------------------------------------------------------------- */
+.BtnDev{
+  position: relative;
+}
+
+.SliderB1{
+  position: absolute;
+  top:0;
+  left:0;
+  border: none;
+  background-color:#ff0000;
+  padding: 8px 10px;
+  border-radius: 50px;
+  z-index: 18;
+  margin-left: -70px;
+  margin-top: 100px;
+
+}
+
+.SliderB2{
+  position: absolute;
+  top:0;
+  right:0;
+  border: none;
+  background-color:#ff0000;
+  padding: 8px 10px;
+  border-radius: 50px;
+  z-index: 18;
+  margin-right: -70px;
+  margin-top: 100px;
+}
+
+.icon1{
+  font-size: 20px;
+  color: #fff;
+}
+.icon2{
+  font-size: 20px;
+  color: #fff;
+}
+
+
 .slidertxt{
   text-align: center;
   font-family: 'Oswald';
@@ -914,11 +955,36 @@
   }
 
 
+  .SliderB1{
+    margin-left: -40px;
+    margin-top: 100px;
+  
+  }
+  
+  .SliderB2{
+    margin-right: -40px;
+    margin-top: 100px;
+  }
+  
+  .icon1{
+    font-size: 20px;
+    color: #fff;
+  }
+  .icon2{
+    font-size: 20px;
+    color: #fff;
+  }
+
+
 
 }
 
 
 @media (max-width: 575px) {
+
+  .BtnDev{
+    display: none;
+  }
 
   .MenubarSec{
     top:10px;

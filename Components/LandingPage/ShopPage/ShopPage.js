@@ -19,7 +19,7 @@ const ShopPage = () => {
                 -------------------------------------------------------------------------------------------------------*/}
                 <section>
 
-                            <h2 className={styles.text4}>All <span className={styles.text4R}>Products</span></h2>
+                        <h2 className={styles.text4}>All <span className={styles.text4R}>Products</span></h2>
 
                     <Container>
 

@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 // import "./styles.css";
 
 // import required modules
+
 import { Pagination, Navigation,} from "swiper";
 import { Col, Container, Row } from 'react-bootstrap';
 // import Image from 'react-bootstrap/Image';

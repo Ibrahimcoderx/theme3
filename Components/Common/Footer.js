@@ -9,6 +9,10 @@ import {  AiFillYoutube,AiOutlineInstagram, AiOutlineTwitter } from "react-icons
 
 
 const Footer = () => {
+
+      const today = new Date();
+      const year = today.getFullYear(); 
+
   return (
     <>
         <section>
@@ -137,7 +141,7 @@ const Footer = () => {
                           <li>
                             <Link href="#">
                                 <ImMobile2 className={styles.mobile}/> 
-                                    &nbsp;  +1 (7635) 547-12-97 
+                                    &nbsp;  +8801894844452
                               </Link>
                           </li>
 
@@ -151,7 +155,7 @@ const Footer = () => {
                           <li>
                             <Link href="#" >
                               <GrLocation className={styles.falocationdot} />
-                                &nbsp; 4517 Washington Ave. Manchester, Kentucky 39495
+                                &nbsp; SAR Bhaban, Level-5 , Ka-78, Progoti Sarani, Kuril, Vatara, Dhaka-1229, Bangladesh
                             </Link>
                           </li>
 
@@ -171,46 +175,24 @@ const Footer = () => {
                   </ul>
                 </Col>
 
-{/* 
-                  <Col  xs={12} sm={2} className={styles.footerul3}>
-                    <p className={styles.footerp}>Join our social media</p>
 
-                    <ul className={styles.footterlasticon}>
-                      <li>
-                          <Link href="#" >
-                              <GrFacebookOption className={styles.h}/>
-                          </Link>
-                      </li>
-
-                      <li>
-                          <Link href="#" >
-                            <AiFillYoutube className={styles.h} />
-                          </Link>
-                      </li>
-
-                      <li>
-                        <Link href="#" >
-                           <AiOutlineInstagram className={styles.h} />
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link href="#" ><AiOutlineTwitter className={styles.h} />
-                        </Link>
-                      </li>
-
-                    </ul>
-                  </Col> */}
 
               </Row>
 
               <Row>
                 <Col xs={12}>
                     <div className={styles.hr}></div>
-                    {/* <hr className={styles.hr}/> */}
                     <div className={styles.lastdiv}>
-                      <p className={styles.lastp1}>© 2023 Company Name . All Rights Reserved.</p>
-                      <p className={styles.lastp2}>System developed by Funneliner</p>
+                      {/* <p className={styles.lastp1}>© 2023 Company Name . All Rights Reserved.</p>
+                      <p className={styles.lastp2}>System developed by Funneliner</p> */}
+
+                       {/* Tiny Footer */}
+                            <div className={styles.tinyFooter}>
+                                
+                                <p>@ {year} All Rights Reserved </p>
+                                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                          </div>
                     </div>
                 </Col>
               </Row>

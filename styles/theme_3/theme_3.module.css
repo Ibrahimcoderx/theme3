@@ -805,7 +805,7 @@
 
 
 .pagination .pagia.active {
-  background-color: red;
+  background-color: #ff0000;
   color: white;
   border: 1px solid #4CAF50;
 }
@@ -826,6 +826,27 @@
 .MobileMenu{
   display: none;
 }
+
+/* Other---------- */
+.tinyFooter p a{
+  display: inline;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff0000;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.tinyFooter p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tinyFooter  {
+        text-align: center;
+}
+
+
 
   
 /* --------------------------------------------------------------------------------------------------------------------- */

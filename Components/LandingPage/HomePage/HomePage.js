@@ -35,6 +35,8 @@ const HomePage = () => {
           {/*  --------------------------------------------------------------------------------------------------------------------- 
                 Slider
           -------------------------------------------------------------------------------------------------------*/}
+
+
         <section className={styles.Section_gap}></section>
 
         <section className={styles.CarouselSec2}>
@@ -51,6 +53,8 @@ const HomePage = () => {
 
               <div className={styles.BtnDev}>
                   <button className={styles.SliderB1} onClick={() => swiperRef.current?.slidePrev()}>   
+
+                  
                     <IoIosArrowBack  className={styles.icon1}></IoIosArrowBack>
                   </button>
 

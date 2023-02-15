@@ -59,6 +59,7 @@ const HomePage = () => {
                   </button>
 
                   <button className={styles.SliderB2} onClick={() => swiperRef.current?.slideNext()}> 
+
                     <IoIosArrowForward className={styles.icon2}></IoIosArrowForward>
                   </button>
               </div>
@@ -118,6 +119,7 @@ const HomePage = () => {
                         </div>
                       </div>
                       <h2 className={styles.slidertxt}>Burger</h2>
+
                     </SwiperSlide>
                    
                     <SwiperSlide>
@@ -127,6 +129,7 @@ const HomePage = () => {
                         </div>
                       </div>
                       <h2 className={styles.slidertxt}>Sandwiches</h2>
+                      
                     </SwiperSlide>
                         
                     <SwiperSlide>

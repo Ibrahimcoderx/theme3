@@ -57,11 +57,11 @@ const Menubar = () => {
                     {/* mid */}
                     <div className={styles.middleMenuDiv}>
 
-                      <Link className={styles.Active} href='#'>Home</Link>
+                      <Link className={styles.Active} href=''>Home</Link>
 
-                      <Link className={styles.Link3} href='#'>Shop</Link>
+                      <Link className={styles.Link3} href='/shop-page'>Shop</Link>
 
-                      <Link className={styles.Link4} href='#'>About Us</Link>
+                      <Link className={styles.Link4} href='/product-details'>About Us</Link>
 
                       <Link className={styles.Link5} href='#'>Contact Us</Link>
                     </div>

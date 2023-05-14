@@ -7,13 +7,15 @@ const index = () => {
   return (
     
     <>
+
       <div>
 
         <Menubar></Menubar>
         <ShopPage></ShopPage>
         <Footer></Footer>
 
-      </div>     
+      </div>    
+       
     </>
   )
 }

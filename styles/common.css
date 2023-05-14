@@ -4,10 +4,11 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
-
+body{
+    overflow-x: hidden;
+}
 /* swiper.... */
 
 .swiper-pagination span{
@@ -68,6 +69,7 @@
 }
 
 @media (max-width: 575px) {
+
     .swiper-pagination span{   
         padding: 5px;
         vertical-align: 0px;
@@ -76,6 +78,7 @@
   .mySwiper .swiper-button-next, .swiper-button-prev{
     display: none;
 }
+
   .mySwiper .swiper-button-prev, .swiper-button-next{
     display: none;
 }
